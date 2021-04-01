@@ -198,9 +198,50 @@
     items: 1,
     loop: true,
     autoplay: true,
-    dots: true
+    dots: true,
+    smartSpeed: 1200
+    
 });
 
+    /*------------------
+        Product Slider
+    --------------------*/
+    $(".event-slider").owlCarousel({
+      loop: true,
+      margin: 25,
+      nav: true,
+      items: 4,
+      dots: true,
+      navText: ['<i class="icofont-arrow-left icofont-2x"></i>', '<i class="icofont-arrow-right icofont-2x"></i>'],
+      smartSpeed: 1200,
+      autoHeight: false,
+      autoplay: true,
+      responsive: {
+          0: {
+              items: 1,
+          },
+          576: {
+              items: 2,
+          },
+          992: {
+              items: 2,
+          },
+          1200: {
+              items: 3,
+          }
+      }
+  });
+
+      /*------------------
+        Product Slider
+    --------------------*/
+    $(".events-slider").owlCarousel({
+      items: 4,
+      loop: true,
+      autoplay: true,
+      dots: true,
+      smartSpeed: 1200
+  });
 
 
 })(jQuery);
