@@ -1,0 +1,15 @@
+/* Warna dasar : */
+
+/* biru     */
+h1 {
+    color: #112C4A;
+    color: #6FA0BE;
+    color: #D22137;
+    /* background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(210, 33, 55, 1) 37%, rgba(17, 44, 74, 1) 100%); */
+    linear-gradient(to left, #D22137, #112C4A);
+}
+
+
+/* typographi */
+/* montserrat
+roboto */
