@@ -927,6 +927,10 @@ section {
 
 @media (max-width: 768px) {
   .cliens img {
+    max-width: 80%;
+  }
+
+  .cliens .mid img {
     max-width: 40%;
   }
 }
