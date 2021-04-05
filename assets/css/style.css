@@ -1690,8 +1690,8 @@ section {
 # Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
-  padding: 15px 0;
-  background: #f3f5fa;
+  padding: 30px 0;
+  /* background: #f3f5fa; */
   min-height: 40px;
   margin-top: 72px;
 }
@@ -1881,6 +1881,7 @@ section {
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #fff;
+
 }
 
 #footer .footer-top .footer-contact {
@@ -2007,4 +2008,112 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+/*--------------------------------------------------------------
+# Training Courses
+--------------------------------------------------------------*/
+.training-course {
+  margin-top: -50px;
+}
+
+.training-course .item {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.training-course .item .pic {
+  overflow: hidden;
+  width: 180px;
+  /* border-radius: 50%; */
+}
+
+.training-course .item .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.training-course .item:hover {
+  transform: translateY(-10px);
+}
+
+.training-course .item .item-info {
+  padding-left: 30px;
+}
+
+.training-course .item h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #112C4A;
+}
+
+.training-course .item span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.training-course .item span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.training-course .item p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.training-course .item .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.training-course .item .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.training-course .item .social a i {
+  color: #112C4A;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.training-course .item .social a:hover {
+  background: #47b2e4;
+}
+
+.training-course .item .social a:hover i {
+  color: #fff;
+}
+
+.training-course .item .social a+a {
+  margin-left: 8px;
+}
+
+/* search Training */
+.search-training {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
 }
