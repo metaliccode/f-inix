@@ -2117,3 +2117,127 @@ section {
   background-size: cover;
   padding: 60px 0;
 }
+
+
+
+
+/*--------------------------------------------------------------
+# Hero it consultant 
+--------------------------------------------------------------*/
+#hero-it {
+  width: 100%;
+  height: auto;
+  /* background: #112C4A; */
+  /* background: #6FA0BE; */
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+
+}
+
+#hero-it .container {
+  padding-top: 72px;
+}
+
+#hero-it h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#hero-it p {
+  color: rgba(229, 229, 233, 0.774);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#hero-it h5 {
+  /* color: #D22137; */
+  /* background: -webkit-linear-gradient(#D22137, #112C4A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* background: #fff; */
+  color: #fff;
+}
+
+#hero-it .btn-get-it {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  margin: 10px 0 0 0;
+  color: #fff;
+  transition: 0.9s;
+  /* background: #47b2e4; */
+  /* background: #6FA0BE; */
+  background: #112C4A;
+  /* transform: scale(0.9, 0.9); */
+}
+
+#hero-it .btn-get-it:hover {
+  /* background: #209dd8; */
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(to left, #D22137, #112C4A);
+}
+
+/* #hero-it .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+} */
+
+@media (max-width: 991px) {
+  #hero-it {
+    height: 100vh;
+    text-align: center;
+  }
+
+  #hero-it .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+
+  #hero-it .hero-img {
+    text-align: center;
+    margin: 0px auto;
+  }
+
+  #hero-it .hero-img img {
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero-it h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero-it h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero-it .hero-img img {
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero-it .hero-img img {
+    width: 80%;
+  }
+
+  #hero-it .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
