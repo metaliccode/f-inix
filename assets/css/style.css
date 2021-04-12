@@ -1497,8 +1497,11 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid #fff;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #D22137, #112C4A);
+
+  border-bottom: 3px solid #fff;
   padding: 30px;
   background: #fff;
   width: 100%;
@@ -1573,6 +1576,8 @@ section {
   width: 100%;
   border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #D22137, #112C4A);
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -1654,16 +1659,30 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #47b2e4;
+  /* background: #47b2e4;
   border: 0;
-  padding: 12px 34px;
+  
   color: #fff;
-  transition: 0.4s;
+  
+  border-radius: 50px; */
+  border: 0;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 34px;
   border-radius: 50px;
+  margin: 30px 0 0 0;
+  color: #fff;
+  transition: 0.5s;
+  background: #112C4A;
+  transform: scale(1, 1);
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #209dd8;
+  /* background: #209dd8; */
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(to left, #D22137, #112C4A);
+  color: #fff;
 }
 
 @-webkit-keyframes animate-loading {
@@ -2240,4 +2259,67 @@ section {
     font-size: 16px;
     padding: 10px 24px 11px 24px;
   }
+}
+
+/*--------------------------------------------------------------
+# hero about
+--------------------------------------------------------------*/
+#hero-about {
+  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+  padding: 150px 0;
+}
+
+.a-card {
+  background: #fff;
+  border-radius: 20px;
+  height: auto;
+  width: 100%;
+  margin-top: -100px;
+  /* padding-top: 30px; */
+  padding-bottom: 30px;
+  border: 0;
+
+  /* -webkit-box-shadow: 21px 22px 31px -10px rgba(161, 163, 181, 0.79);
+  -moz-box-shadow: 21px 22px 31px -10px rgba(161, 163, 181, 0.79);
+  box-shadow: 21px 22px 31px -10px rgba(161, 163, 181, 0.79); */
+
+  /* -webkit-box-shadow: 14px 9px 34px -8px rgba(118, 127, 201, 1);
+  -moz-box-shadow: 14px 9px 34px -8px rgba(118, 127, 201, 1);
+  box-shadow: 14px 9px 34px -8px rgba(118, 127, 201, 1); */
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+/*--------------------------------------------------------------
+# about a-card
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #112C4A;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-about {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  margin: 30px 0 0 0;
+  color: #fff;
+  transition: 0.5s;
+  /* background: #47b2e4; */
+  /* background: #6FA0BE; */
+  background: #112C4A;
+  transform: scale(0.9, 0.9);
+}
+
+.btn-about:hover {
+  opacity: 1;
+  transform: scale(1, 1);
+  background: linear-gradient(to left, #D22137, #112C4A);
+  color: #fff;
 }
