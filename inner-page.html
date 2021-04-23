@@ -29,6 +29,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/costum.css" rel="stylesheet">
+
 
 </head>
 
@@ -38,9 +40,9 @@
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">Arsha</a></h1>
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Arsha</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo/logo full.png" alt="" class="img-fluid"></a>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
@@ -87,6 +89,51 @@
           <li>Inner Page</li>
         </ol>
         <h2>Inner Page</h2>
+
+        <!-- costum images filters -->
+        <div class="wrapper">
+          <!-- filter Items -->
+          <nav>
+            <div class="items">
+              <span class="item active" data-name="all">All</span>
+              <span class="item" data-name="bag">Bag</span>
+              <span class="item" data-name="shoe">Shoe</span>
+              <span class="item" data-name="watch">Watch</span>
+              <span class="item" data-name="camera">Camera</span>
+              <span class="item" data-name="headphone">Headphone</span>
+            </div>
+          </nav>
+          <!-- filter Images -->
+          <div class="gallery">
+            <div class="image" data-name="bag"><span><img src="assets/img/portfolio/portfolio-1.jpg" alt=""></span>
+            </div>
+            <div class="image" data-name="headphone"><span><img src="assets/img/portfolio/portfolio-1.jpg"
+                  alt=""></span>
+            </div>
+            <div class="image" data-name="camera"><span><img src="assets/img/portfolio/portfolio-1.jpg" alt=""></span>
+            </div>
+            <div class="image" data-name="shoe"><span><img src="assets/img/portfolio/portfolio-1.jpg" alt=""></span>
+            </div>
+            <div class="image" data-name="headphone"><span><img src="assets/img/portfolio/portfolio-1.jpg"
+                  alt=""></span>
+            </div>
+            <div class="image" data-name="watch"><span><img src="assets/img/portfolio/portfolio-1.jpg" alt=""></span>
+            </div>
+            <div class="image" data-name="shoe"><span><img src="assets/img/portfolio/portfolio-1.jpg" alt=""></span>
+            </div>
+            <div class="image" data-name="camera"><span><img src="assets/img/portfolio/portfolio-1.jpg" alt=""></span>
+            </div>
+          </div>
+        </div>
+        <!-- fullscreen img preview box -->
+        <div class="preview-box">
+          <div class="details">
+            <span class="title">Image Category: <p></p></span>
+            <span class="icon fas fa-times"></span>
+          </div>
+          <div class="image-box"><img src="" alt=""></div>
+        </div>
+        <div class="shadow"></div>
 
       </div>
     </section>
@@ -170,6 +217,7 @@
 
         </div>
       </div>
+
     </div>
 
     <div class="container footer-bottom clearfix">
@@ -202,6 +250,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/costum.js"></script>
 
 </body>
 
