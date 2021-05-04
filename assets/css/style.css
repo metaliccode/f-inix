@@ -1262,7 +1262,7 @@ section {
 }
 
 .portfolio .portfolio-item {
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 .portfolio .portfolio-item .portfolio-img {
@@ -2456,4 +2456,169 @@ section {
 #event .pi-pic img:hover {
   transform: scale(1.2);
   filter: grayscale(1);
+}
+
+/*--------------------------------------------------------------
+# Whats app button
+--------------------------------------------------------------*/
+.wa {
+  position: fixed;
+  /* display: none; */
+  left: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.wa i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #12e736;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.wa i:hover {
+  background: #12e736;
+  color: #fff;
+  transform: rotate(360deg);
+}
+
+.hide {
+  position: fixed;
+  display: none;
+  left: 15px;
+  bottom: 3px;
+  z-index: 99999;
+}
+
+.wa:hover+.hide {
+  display: block;
+  margin-left: 60px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+/*--------------------------------------------------------------
+# Event Related
+--------------------------------------------------------------*/
+#event-related {
+  background: #eff2f8;
+}
+
+#event-related .card {
+  border: 0px;
+  box-shadow: 0 20px 20px 2px rgba(20, 45, 100, 0.1);
+  border-radius: 30px;
+}
+
+#event-related .card-img-top {
+  border-radius: 30px 30px 0 0;
+}
+
+#event-related h2 {
+  font-size: 36px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* @media (max-width: 800px) {
+  #event-related .card .mx-30 {
+    width: 100%;
+  }
+} */
+
+/*--------------------------------------------------------------
+# event Details
+--------------------------------------------------------------*/
+.event-details {
+  padding-top: 40px;
+}
+
+.event-details .event-details-container {
+  position: relative;
+}
+
+.event-details .event-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.event-details .event-details-carousel .owl-nav,
+.event-details .event-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.event-details .event-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.event-details .event-details-carousel .owl-dot.active {
+  background-color: #47b2e4 !important;
+}
+
+.event-details .event-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.event-details .event-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.event-details .event-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.event-details .event-info ul li+li {
+  margin-top: 10px;
+}
+
+.event-details .event-description {
+  padding-top: 50px;
+}
+
+.event-details .event-description h2 {
+  width: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.event-details .event-description p {
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .event-details .event-description h2 {
+    width: 100%;
+  }
+
+  .event-details .event-info {
+    position: static;
+    margin-top: 30px;
+  }
 }

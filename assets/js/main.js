@@ -243,6 +243,13 @@
     smartSpeed: 1200
   });
 
+  // Event details carousel
+  $(".event-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
 
 })(jQuery);
 
