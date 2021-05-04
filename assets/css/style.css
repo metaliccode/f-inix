@@ -304,11 +304,20 @@ h6 {
 /*--------------------------------------------------------------
 # Top Training
 --------------------------------------------------------------*/
+#top-training .card {
+  border: 0px;
+}
 
 #top-training .card-img-top {
   /* background-color: green; */
   transition: 0.4s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-top-left-radius: 30px;
   /* Animation */
+}
+
+#top-training .card-body {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #top-training .card-img-top:hover {
@@ -318,6 +327,9 @@ h6 {
 
 #top-training .card-footer {
   background: #112C4A;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 10px;
 }
 
 #top-training .card-footer .t-footer {
@@ -1222,10 +1234,10 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Portfolio all
 --------------------------------------------------------------*/
 .portfolio #portfolio-flters {
-  list-style: none;
+  /* list-style: none; */
   margin-bottom: 20px;
 }
 
@@ -1250,7 +1262,7 @@ section {
 }
 
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .portfolio .portfolio-item .portfolio-img {
@@ -1312,6 +1324,29 @@ section {
 
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
+}
+
+
+@media (max-width: 1000px) {
+  .pf li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    color: #444444;
+    transition: all 0.3s;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .pf li:hover,
+  .pf li.filter-active {
+    background: #47b2e4;
+    color: #fff;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -2340,8 +2375,9 @@ section {
   padding-top: 10px;
 }
 
-/* card profile */
-/* ============ */
+/*--------------------------------------------------------------
+# Profile Instructor
+--------------------------------------------------------------*/
 #profile {
   margin-top: -100px;
 }
@@ -2400,4 +2436,24 @@ section {
   .mx-30 {
     margin-bottom: 30px;
   }
+}
+
+/*--------------------------------------------------------------
+# Events & Promo
+--------------------------------------------------------------*/
+#event .pi-pic {
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 30px 0px 0px;
+}
+
+#event .pi-pic img {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 30px 0px 0px;
+  transition: all 1.5s ease;
+}
+
+#event .pi-pic img:hover {
+  transform: scale(1.2);
+  filter: grayscale(1);
 }
