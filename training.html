@@ -185,7 +185,7 @@
                     <!-- <li><a href="#services">Courses</a></li> -->
                     <li class="drop-down"><a href="#courses">Courses</a>
                         <ul>
-                            <li><a href=>All Courses</a></li>
+                            <!-- <li><a href=>All Courses</a></li> -->
                             <li class="drop-down"><a href="#">By Categories</a>
                                 <ul>
                                     <li><a href="#"> Networking</a></li>
@@ -222,7 +222,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li>Training</li>
                 </ol>
-                <div class="section-title">
+                <div class="section-title" data-aos="zoom-in-up">
                     <h2>INIXINDO BANDUNG TRAINING</h2>
                 </div>
             </div>
@@ -294,19 +294,25 @@
         </section> -->
 
         <!-- search training -->
-        <section class="search-training container-fluid d-flex align-content-center justify-content-center mb-5">
+        <section class="container-fluid search-training d-flex align-content-center justify-content-center mb-5">
+            <form class="form-inline" data-aos="zoom-in-down">
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">By</div>
+                    </div>
+                    <select class="custom-select">
+                        <option>Pilih Salah Satu</option>
+                        <option>Network</option>
+                        <option>Programming</option>
+                        <option>Database</option>
+                        <option>IT Management</option>
+                    </select>
+                </div>
+                <div class="input-group mb-2 mr-sm-2">
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername2"
+                        placeholder="Search Training">
+                </div>
 
-            <select class="form-control col-md-2 mr-2">
-                <option>Pilih Salah Satu</option>
-                <option>Network</option>
-                <option>Programming</option>
-                <option>Database</option>
-                <option>IT Management</option>
-            </select>
-
-            <form class="form-inline">
-                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
-                    placeholder="Search Training">
                 <button type="submit" class="btn btn-info mb-2">Search</button>
             </form>
         </section>
