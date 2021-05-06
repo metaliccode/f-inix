@@ -2622,3 +2622,124 @@ section {
     margin-top: 30px;
   }
 }
+
+/*--------------------------------------------------------------
+# Careers Jobs Apply
+--------------------------------------------------------------*/
+#job .job-title {
+  display: block;
+  background: transparent;
+  padding: 0 0 10px;
+  border-bottom: 2px solid #102A43;
+  margin-left: 20px;
+}
+
+#job .box-job {
+  margin-left: 40px;
+}
+
+#job .box-job ul {
+  padding: 0px 0;
+  list-style: none;
+  color: #112C4A;
+  text-align: left;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+#job .box-job ul li {
+  padding: 5px 0 0px 30px;
+  position: relative;
+}
+
+#job .box-job ul i {
+  color: #28a745;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+#job .box-job ul .na {
+  color: #ccc;
+}
+
+#job .box-job ul .na i {
+  color: #ccc;
+}
+
+#job .box-job ul .na span {
+  text-decoration: line-through;
+}
+
+#job .job-btn {
+  margin-left: 10px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: #fff;
+  transition: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  transform: scale(0.9, 0.9);
+  transition: 0.8s;
+  background: #112C4A;
+  /* background: linear-gradient(to left, #D22137, #112C4A); */
+
+  /* border: 1px solid #47b2e4; */
+  /* border: 1px solid #112C4A; */
+}
+
+#job .job-btn:hover {
+  transform: scale(1, 1);
+  background: linear-gradient(to left, #D22137, #112C4A);
+  /* background: #112C4A; */
+  color: #fff;
+}
+
+#job .star {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+#job .star i {
+  color: #ccc;
+}
+
+#job .line {
+  display: block;
+  background: transparent;
+  /* padding: 0 0 10px; */
+  border-bottom: 2px solid #ccc;
+  margin-left: 25px;
+  margin-top: -10px;
+}
+
+#job .req {
+  color: #112C4A;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+}
+
+.apply-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: #fff;
+  transition: none;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  transform: scale(0.9, 0.9);
+  transition: 0.8s;
+  background: #112C4A;
+  text-align: center;
+}
+
+.apply-btn:hover {
+  transform: scale(1, 1);
+  background: linear-gradient(to left, #D22137, #112C4A);
+  /* background: #112C4A; */
+  color: #fff;
+}
